@@ -30,7 +30,7 @@ namespace Web.Controllers.Menu.Category
             var @return = ApplicationRegistry.Category.Add(name, sort, restaurantId);
             var value = @return.Result(new ReturnContext() { SystemId = "app" });
 
-            var @return1 = ApplicationRegistry.Category.Select(restaurantId);
+            //var @return1 = ApplicationRegistry.Category.Select(restaurantId);
             var value1 = @return.Result(new ReturnContext() { SystemId = "app" });      
             //var result=value.      
             return View(value1);
