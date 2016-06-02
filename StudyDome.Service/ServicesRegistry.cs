@@ -34,7 +34,7 @@ namespace StudyDome.Service
                 usedPath = path1;
             }
 
-            Stream stream = Assembly.ReflectionOnlyLoadFrom(usedPath).GetManifestResourceStream("StudyDome.Services.services.xml");
+            Stream stream = Assembly.ReflectionOnlyLoadFrom(usedPath).GetManifestResourceStream("StudyDome.Service.services.xml");
 
             factory = b.Build(stream);
         }

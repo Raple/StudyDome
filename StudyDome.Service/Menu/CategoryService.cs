@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace StudyDome.Service.Menu
 {
-  public  class CategoryService
+  public  class CategoryService:ICategoryService,Easy.Domain.ServiceFramework.IService
     {
         [ServiceProtocol]
         [Directory("StudyMenu", "Category/Add")]

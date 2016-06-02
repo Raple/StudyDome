@@ -48,6 +48,7 @@
     <Reference Include="Easy.Public, Version=1.0.2.4, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Easy.Public.1.0.2.4\lib\net451\Easy.Public.dll</HintPath>
       <Private>True</Private>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
     <Reference Include="Easy.Rpc, Version=1.0.1.4, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Easy.Rpc.1.0.1.4\lib\net451\Easy.Rpc.dll</HintPath>
@@ -109,7 +110,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="services.xml" />
+    <EmbeddedResource Include="services.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

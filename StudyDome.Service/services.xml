@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.39541240.com/services">
-  <service interface="StudyDome.Services.Menu.ICategoryService,StudyDome.Service"
-         implementation="StudyDome.Services.Menu.CategoryService,StudyDome.Service"
+  <service interface="StudyDome.Service.Menu.ICategoryService,StudyDome.Service"
+         implementation="StudyDome.Service.Menu.CategoryService,StudyDome.Service"
          interceptor="Easy.Rpc.RPCServiceInterceptor,Easy.Rpc"
          enable_interceptor="true"/>
   </services>
