@@ -12,12 +12,31 @@
 </head>
 <body>
     <div> 
-      <input id="name" name="name" type="text">
-       <input id="sort" name="name" type="text">
-        <input id="restaurantId" name="restaurantId" type="text">
+      name:<input id="name" name="name" type="text">
+      sort: <input id="sort" name="sort" type="text">
+      restaurantId: <input id="restaurantId" name="restaurantId" type="text" value="1">
     </div>
     <div>
-        <a href="~/Controllers/Menu/Category/Category/Save" target="_self">保存</a>
+        <a href="javascript:void(0)" onclick="Save()" target="_self">保存</a>
       </div>
+
+    <script>
+        function  Save()
+        {
+            alert("start");
+            var name = document.getElementById("name").value;           
+            var sort = document.getElementById("sort").value;
+            var restaurantId = document.getElementById("restaurantId").value;
+
+            alert(name);
+
+            $.ajax({
+                url: "/Category/Show?name=" + name + "&sort=" + sort + "&restaurantId=" + restaurantId,
+                success: function (data) {                  
+                    alert("success");
+                }
+            });
+        }
+    </script>
 </body>
 </html>

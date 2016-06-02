@@ -4,14 +4,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyDome.Application", "StudyDome.Application\StudyDome.Application.csproj", "{C66CF0C7-E05E-4D64-8586-B2002D2F4C88}"
+	ProjectSection(ProjectDependencies) = postProject
+		{59C781BE-814C-49D9-A4DF-A3A93E5123C4} = {59C781BE-814C-49D9-A4DF-A3A93E5123C4}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyDome.DomainModel", "StudyDome.DomainModel\StudyDome.DomainModel.csproj", "{59C781BE-814C-49D9-A4DF-A3A93E5123C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyDome.Infrastructure", "StudyDome.Infrastructure\StudyDome.Infrastructure.csproj", "{25348CA8-4B0F-4666-8139-07E2C1EE8EEF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyDome.Test", "StudyDome.Test\StudyDome.Test.csproj", "{80F8F82E-1EDB-4085-8AC2-90F4FBC5486A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C2EDE6B-DED1-45F0-A2AA-930D27F48ECE} = {5C2EDE6B-DED1-45F0-A2AA-930D27F48ECE}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{677D2BC1-1331-4560-8477-3D18BE37A46B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C2EDE6B-DED1-45F0-A2AA-930D27F48ECE} = {5C2EDE6B-DED1-45F0-A2AA-930D27F48ECE}
+		{25348CA8-4B0F-4666-8139-07E2C1EE8EEF} = {25348CA8-4B0F-4666-8139-07E2C1EE8EEF}
+		{59C781BE-814C-49D9-A4DF-A3A93E5123C4} = {59C781BE-814C-49D9-A4DF-A3A93E5123C4}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyDome.Service", "StudyDome.Service\StudyDome.Service.csproj", "{5C2EDE6B-DED1-45F0-A2AA-930D27F48ECE}"
 EndProject

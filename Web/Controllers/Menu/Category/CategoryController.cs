@@ -16,19 +16,24 @@ namespace Web.Controllers.Menu.Category
             return View();
         }
 
-        public void Save(string name,int sort,int restaurantId)
+        //public void Save(string name,int sort,int restaurantId)
+        //{
+           
+        //    Redirect("/Category/Show");
+        //}
+
+        public ActionResult Show()
         {
+            string name = "lyp";
+            int sort = 1;
+            int restaurantId = 1;
             var @return = ApplicationRegistry.Category.Add(name, sort, restaurantId);
             var value = @return.Result(new ReturnContext() { SystemId = "app" });
-            Redirect("/Category/Show");
-        }
 
-        public ActionResult Show(int restaurantId)
-        {
-            var @return = ApplicationRegistry.Category.Select(restaurantId);
-            var value = @return.Result(new ReturnContext() { SystemId = "app" });      
+            var @return1 = ApplicationRegistry.Category.Select(restaurantId);
+            var value1 = @return.Result(new ReturnContext() { SystemId = "app" });      
             //var result=value.      
-            return View(value);
+            return View(value1);
         }
     }
 }
