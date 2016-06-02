@@ -67,6 +67,7 @@
     <Compile Include="Application\Menu\Category\CategoryApplication.cs" />
     <Compile Include="Application\Menu\Category\Select\SelectReturnTransformer.cs" />
     <Compile Include="Models\Menu\Category\CategoryModel.cs" />
+    <Compile Include="PageList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

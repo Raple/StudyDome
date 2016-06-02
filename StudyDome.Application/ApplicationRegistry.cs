@@ -12,16 +12,16 @@ namespace StudyDome.Application
         {
             ApplicationFactory.Instance().Register(new CategoryApplication());
         }
-    }
 
-    /// <summary>
-    /// 商品分类应用服务
-    /// </summary>
-    public static CategoryApplication Category
-    {
-        get
+        /// <summary>
+        /// 商品分类应用服务
+        /// </summary>
+        public static CategoryApplication Category
         {
-            return ApplicationFactory.Instance().Get<CategoryApplication>();
+            get
+            {
+                return ApplicationFactory.Instance().Get<CategoryApplication>();
+            }
         }
     }
 }
