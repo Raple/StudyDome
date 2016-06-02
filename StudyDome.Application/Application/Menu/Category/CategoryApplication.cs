@@ -2,15 +2,10 @@
 using Easy.Domain.Base;
 using StudyDome.Service;
 using StudyDome.Service.Menu.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace StudyDome.Application.Application.Menu
 {
-   public class CategoryApplication: BaseApplication
+    public class CategoryApplication: BaseApplication
     {
         /// <summary>
         /// 添加商品分类
